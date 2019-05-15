@@ -12,11 +12,14 @@ def main():
     # create two strings named "s1" and "s2"
     # create s1 using a literal string with at least 3 words in it
     # create s2 using the input() function. Enter a string with at 
-    #    least 3 words in it
+    # least 3 words in it
     # your code below here
+    s1 = "Some text here"
+    s2 = input("Enter text here: ")
 
     # print both strings
-
+    print(s1)
+    print(s2)
 
     '''
     - element access
@@ -31,7 +34,8 @@ def main():
     # the output line should contain the value of the index as well as 
     # the character
     # your code below here
-
+    for i in range (1, len(s1), 3):
+        print(s1[i])
 
     '''
     - element insertion
@@ -43,11 +47,16 @@ def main():
     # the two slices
     #
     # form two new string variables using slicing on s1
-
+    x = s1[0:5]
+    y = s1[5:10]
+    print(x)
+    print(y)
     # create a third variable with the string you want to insert
-
+    z = s1[10:13]
+    print(z)
     # form a new string named "snew" using concatenation and print snew.
-
+    snew = x + y + z
+    print(snew)
 
     '''
     - element deletion
@@ -84,4 +93,4 @@ def main():
     # print l
 
 
-    main()
+main()
